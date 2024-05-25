@@ -1,0 +1,228 @@
+<!--
+  -- Student Name: Curtis Benko
+  -- Student ID: 41104274
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: 23W
+  -- Assignment: 4
+  -- Date Submitted: APRIL 2023 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link lang="en-ca" />
+    <title>ComputersRUS</title>
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet" href="assets/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="assets/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      type="keywords"
+      content="Computers, Computer Parts, Computer Components"
+    />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header>
+      <!-- MOBILE Top Navigation Menu -->
+      <div class="topnav-mobile">
+        <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="index.htm">Home</a>
+          <a href="about-us.htm">About Us</a>
+          <a href="contact-us.htm">Contact Us</a>
+          <a href="products.htm">Products</a>
+          <a href="cart.htm">Cart</a>
+          <a href="privacy.htm">Privacy Policy</a>
+          <a href="terms.htm">Terms and Conditions</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- MOBILE NAV END -->
+      <nav class="topnav">
+        <div class="logo">
+          <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        </div>
+        <div class="pages">
+          <a href="index.htm">Home</a>
+          <a href="about-us.htm">About Us</a>
+          <a href="contact-us.htm">Contact Us</a>
+          <a href="products.htm">Products</a>
+          <a href="cart.htm">Cart</a>
+        </div>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <address class="written-by">Written by Curtis Benko</address>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="contact-container">
+        <h3>Contact Us</h3>
+        <!--Contact form-- Sourced and modified from W3Schools-->
+        <div class="contact-form">
+          <form class="form" id="form" action="#">
+            <div class="row">
+              <div class="col-25">
+                <label for="name">Name</label><span>(Required)</span>
+              </div>
+              <div class="col-75">
+                <input
+                  type="fill-in-text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="phone">Phone</label><span>(5191234567)</span>
+              </div>
+              <div class="col-75">
+                <input
+                  type="fill-in-text"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your Phone Number.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email</label><span>(Required)</span>
+              </div>
+              <div class="col-75">
+                <input
+                  type="fill-in-text"
+                  id="email"
+                  name="email"
+                  placeholder="Your email.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="confirm_email">Confirm Email</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="fill-in-text"
+                  id="confirm_email"
+                  name="confirm_email"
+                  placeholder="Confirm email.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="dob">Date of Birth</label
+                ><span>(Required)</span>
+              </div>
+              <div class="col-75">
+                <input
+                  type="fill-in-text"
+                  id="dob"
+                  name="dob"
+                  placeholder="Your Date of Birth (mm/dd/yyyy).."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="comments">Comments</label
+                ><span>(Required)</span>
+              </div>
+              <div class="col-75">
+                <textarea
+                  id="comments"
+                  name="comments"
+                  placeholder="Write something.."
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  name="consent"
+                  value="consent"
+                />
+                <label for="consent"></label>
+                  <a href="terms.htm" target="blank"
+                    >I agree to the Terms & Conditions of this page.</a
+                  ></label
+                >
+              </div>
+            </div>
+            <div class="row">
+              <button class="submit-btn" id="submit" type="submit" value="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- MOBILE Footer Navigation Menu -->
+      <div class="footer-nav-mobile">
+        <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        <!-- Navigation links (hidden by default) -->
+        <div class="copyright-mobile">
+          <address class="text">&copy; computersRus 2023</address>
+        </div>
+      </div>
+      <!-- MOBILE Footer NAV END -->
+      <!--This is where the footer lies-->
+      <nav class="footer-nav">
+        <div class="logo">
+          <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        </div>
+        <div class="pages">
+          <a href="index.htm">Home</a>
+          <a href="about-us.htm">About Us</a>
+          <a href="contact-us.htm">Contact Us</a>
+          <a href="products.htm">Products</a>
+          <a href="cart.htm">Cart</a>
+          <a href="privacy.htm">Privacy Policy</a>
+          <a href="terms.htm">Terms and Conditions</a>
+        </div>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+      <div class="copyright">
+        <address class="text">&copy; computersRus 2023</address>
+      </div>
+    </footer>
+    <script src="assets/main.js"></script>
+  </body>
+</html>

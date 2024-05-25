@@ -1,0 +1,925 @@
+/*
+ * Student Name: Curtis Benko
+ * Student ID: 41104274
+ * Course: CST8117 - Cross-Platform Web Design
+ * Semester: 23W
+ * Assignment: 4
+ * Date Submitted: APRIL 2023
+*/
+
+/* I used a Monocromatic colour palette style throughout the website, focused on the main colour being #5F9EA0 */
+
+/* --------------------------------------------------- */
+/* GLOBAL SETUP */
+/* --------------------------------------------------- */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+input:focus,
+button:focus,
+a:focus,
+textarea:focus {
+  background: #ccc;
+}
+
+.contact-form .row button:focus {
+  background: cadetblue;
+}
+
+html,
+body {
+  background-color: #c9c9c9c9;
+  font-size: 16px;
+}
+
+main {
+  min-height: 50vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Goldman", cursive;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 220px;
+  /* margin-bottom: 80px; */
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+hgroup p {
+  font-size: 2rem;
+}
+
+/* --------------------------------------------------- */
+/* ACCESSIBILITY-- SKIP TO CONTENT LINK */
+/* --------------------------------------------------- */
+
+.skip-to-content-link {
+  background: #5f9ea0;
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
+/* --------------------------------------------------- */
+/* NAV BAR */
+/* --------------------------------------------------- */
+
+.topnav {
+  overflow: hidden;
+  padding: 20px;
+  background-color: #e9e9e9;
+}
+
+.topnav-mobile {
+  display: none;
+}
+
+/* --------------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------------- */
+.footer-nav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  padding: 20px;
+  padding-top: 220px;
+  padding-bottom: 220px;
+}
+
+.footernav-mobile {
+  display: none;
+}
+
+.copyright {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 60px;
+  background-color: #e9e9e9;
+}
+
+.text {
+  margin-right: 60px;
+}
+
+/* --------------------------------------------------- */
+/* NAV BAR AND FOOTER*/
+/* --------------------------------------------------- */
+
+.topnav a,
+.footer-nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+.topnav a:hover,
+.footer-nav a:hover {
+  background-color: #5f9ea0;
+  color: black;
+}
+
+.topnav .logo :hover,
+.footer-nav .logo :hover {
+  background-color: #e9e9e9;
+}
+
+.topnav .pages a,
+.footer-nav .pages a {
+  margin-top: 12px;
+}
+
+.topnav .search-container,
+.footer-nav .search-container {
+  float: right;
+  margin-top: 12px;
+}
+
+.topnav .written-by,
+.footer-nav .text {
+  float: right;
+  margin-top: 12px;
+  font-size: 1rem;
+  margin-right: 16px;
+}
+
+.topnav input[type="text"],
+.footer-nav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 1rem;
+  border: none;
+}
+
+.topnav .search-container button,
+.footer-nav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: gainsboro;
+}
+
+.topnav .search-container button:hover,
+.footer-nav .search-container button:hover {
+  background: cadetblue;
+}
+
+/* --------------------------------------------------- */
+/* HOMEPAGE */
+/* --------------------------------------------------- */
+
+.hero-section {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  padding-top: 35vh;
+  text-align: center;
+  color: white;
+}
+
+/*Content section with two Paragraphs side-by-side*/
+.parent-paragraph {
+  font-size: 32px;
+  margin-top: 80px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child-paragraph {
+  flex: 1;
+  margin: 80px;
+  padding: 60px;
+  max-width: 30%;
+  max-height: 700px;
+  min-height: 700px;
+  text-align: center;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #e9e9e9;
+}
+
+.child-paragraph button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.15rem;
+}
+
+.child-paragraph button:hover {
+  background-color: #5f9ea0;
+}
+
+.child-paragraph-p {
+  font-size: 1.5rem;
+}
+
+.hyperlink {
+  color: #000;
+}
+
+.warehouse-img {
+  height: 250px;
+  margin-right: auto;
+  margin-bottom: 55px;
+  margin-left: auto;
+}
+
+.warehouse {
+  font-size: 1rem;
+  padding: 80px;
+}
+
+.parts-list {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 80px;
+  max-width: 60%;
+  margin-right: auto;
+  margin-bottom: 55px;
+  margin-left: auto;
+}
+
+.cards-container {
+  display: flex;
+  align-items: stretch;
+  margin: 220px 80px;
+}
+
+/* --------------------------------------------------- */
+/* HIDDEN HOMEPAGE ELEMENTS (CTA BUTTONS) */
+/* --------------------------------------------------- */
+
+.mobile-cta-about {
+  display: none;
+}
+
+.mobile-cta-products {
+  display: none;
+}
+
+/* --------------------------------------------------- */
+/* ABOUT US */
+/* --------------------------------------------------- */
+
+.about-us-container {
+  display: block;
+  min-height: auto;
+  margin: 145px auto 145px auto;
+  padding: 60px;
+  max-width: 40vw;
+  text-align: center;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #e9e9e9;
+}
+
+.ceo-mugshot {
+  float: left;
+  font-size: 1rem;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.mugshot-img {
+  max-height: 300px;
+  max-width: 300px;
+  padding: 30px 20px 20px 20px;
+}
+
+.about-description {
+  padding: 40px;
+  text-align: left;
+  line-height: 2;
+  font-size: 1.15rem;
+}
+
+/* --------------------------------------------------- */
+/* CONTACT US */
+/* --------------------------------------------------- */
+
+.contact-container {
+  display: block;
+  min-height: 50%;
+  margin: 145px auto 145px auto;
+  padding: 60px;
+  max-width: 40vw;
+  text-align: center;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #e9e9e9;
+}
+
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f200;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.contact-form .row button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  margin-top: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 20%;
+  font-size: 1.15rem;
+  float: right;
+}
+
+.contact-form .row button:hover {
+  background-color: cadetblue;
+}
+
+.contact-form .row span {
+  font-size: 1rem;
+}
+
+.contact-form .row label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+input[type="fill-in-text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.15rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.col-25 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  text-align: left;
+}
+
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+.checkbox {
+  float: right;
+  margin-top: 6px;
+  text-align: left;
+  padding: 12px;
+}
+
+.col-75 textarea {
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.col-75 input {
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  accent-color: cadetblue;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* --------------------------------------------------- */
+/* PRIVACY POLICY AND TERMS&CONDITIONS */
+/* --------------------------------------------------- */
+
+.privacy-and-terms {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* --------------------------------------------------- */
+/* SHOPPING CART (CART.HTM) */
+/* --------------------------------------------------- */
+
+.shopping-cart {
+  width: 750px;
+  min-height: 50vh;
+  margin: 60px auto;
+  background: #ffffff;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding: 30px;
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.image img {
+  max-width: 150px;
+}
+
+.description {
+  max-width: 20%;
+}
+
+.description span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.description span:first-child {
+  margin-bottom: 10px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #5f9ea0;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity input {
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  background-color: #e9e9e9;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button {
+  width: 70px;
+}
+
+.delete-button button {
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.minus-btn img,
+.plus-btn img {
+  margin-top: 3px;
+  width: 20px;
+}
+
+.delete-btn img {
+  margin-top: 3px;
+  width: 25px;
+}
+
+.total-price {
+  max-width: 20%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #5f9ea0;
+}
+
+.cart-totals {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sub-totals,
+.sub-categories {
+  text-align: right;
+  font-size: 1rem;
+  margin: 0px 8% 3% 0;
+}
+
+.sub-totals span,
+.sub-categories span {
+  display: block;
+  margin: 9px 0 9px 0;
+}
+
+.sub-totals span:first-child,
+.sub-categories span:first-child {
+  font-size: 1.15rem;
+}
+
+.sub-totals span:last-child,
+.sub-categories span:last-child {
+  font-size: 2rem;
+  color: #5f9ea0;
+}
+
+/* --------------------------------------------------- */
+/* MEDIA QUERIES */
+/* --------------------------------------------------- */
+
+/* Big Tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  /* --------------------------------------------------- */
+  /* CONTACT-US */
+  /* --------------------------------------------------- */
+  .col-25 {
+    display: none;
+  }
+
+  .col-75 {
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .checkbox {
+    font-size: 1rem;
+  }
+
+  .contact-form .row button {
+    width: 100%;
+  }
+}
+
+/* Small Tablet to Big Tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  /* --------------------------------------------------- */
+  /* CONTACT-US */
+  /* --------------------------------------------------- */
+
+  .contact-container {
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 80%;
+  }
+
+  .col-25 {
+    display: none;
+  }
+
+  .col-75 {
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .checkbox {
+    font-size: 1rem;
+  }
+
+  .contact-form .row button {
+    width: 100%;
+  }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  /* --------------------------------------------------- */
+  /* GENERAL GLOBAL */
+  /* --------------------------------------------------- */
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+
+  /* --------------------------------------------------- */
+  /* TOP AND FOOTER NAV HAMBUGER MENU */
+  /* taken and adapted from W3Schools (2023)
+  /* --------------------------------------------------- */
+
+  .topnav {
+    display: none;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  /* Style the navigation menu */
+  .topnav-mobile {
+    display: contents;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .footer-nav-mobile {
+    display: contents;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e9e9e9;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .copyright-mobile {
+    display: contents;
+    overflow: hidden;
+    text-align: right;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav-mobile #myLinks {
+    display: none;
+    background-color: #e9e9e9;
+  }
+
+  .topnav-mobile #myLinks a {
+    min-width: 40%;
+  }
+
+  /* Style navigation menu links */
+  .topnav-mobile a {
+    max-width: 25%;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .footer-nav-mobile a {
+    max-width: 25%;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav-mobile a.icon {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    right: 0;
+    top: 0;
+  }
+
+  /* --------------------------------------------------- */
+  /* HOMEPAGE */
+  /* --------------------------------------------------- */
+
+  .hero-section h1 {
+    margin: 30px auto;
+  }
+
+  .about-section h2,
+  .mobile-cta-products h2 {
+    margin: 80px auto 0px auto;
+  }
+
+  .parent-paragraph {
+    display: none;
+  }
+
+  .mobile-cta-about,
+  .mobile-cta-products {
+    display: contents;
+    align-content: center;
+  }
+
+  .mobile-cta-about button,
+  .mobile-cta-products button {
+    border: none;
+    outline: 0;
+    margin-left: 25%;
+    margin-top: 20px;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.15rem;
+  }
+
+  .mobile-cta-about a,
+  .mobile-cta-products a {
+    width: 50%;
+  }
+
+  .mobile-cta-products button {
+    margin-bottom: 80px;
+  }
+
+  .mobile-cta-about button:hover,
+  .mobile-cta-products button:hover {
+    background-color: cadetblue;
+  }
+
+  .homepage-product-container {
+    display: none;
+  }
+
+  /* --------------------------------------------------- */
+  /* ABOUT US */
+  /* --------------------------------------------------- */
+
+  .about-us-container {
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 80%;
+  }
+
+  .mugshot-img {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .about-description {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-us-container h3 {
+    font-size: 2rem;
+  }
+
+  /* --------------------------------------------------- */
+  /* CONTACT US */
+  /* --------------------------------------------------- */
+
+  .contact-container {
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 80%;
+  }
+
+  .contact-container h3 {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    border-radius: 5px;
+    background-color: #f2f2f200;
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+
+  .contact-form .row button {
+    width: 100%;
+  }
+
+  .col-25 {
+    display: none;
+  }
+
+  .col-75 {
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .checkbox {
+    font-size: 1.25rem;
+  }
+
+  /* --------------------------------------------------- */
+  /* SHOPPING CART (CART.HTM) */
+  /* --------------------------------------------------- */
+
+  .shopping-cart {
+    max-width: 80%;
+    min-height: 50vh;
+    margin: 30px auto;
+  }
+
+  .item {
+    padding: 30px;
+    justify-content: normal;
+  }
+
+  .quantity,
+  .delete-btn,
+  .image {
+    display: none;
+  }
+
+  .description {
+    padding: 10px;
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+  .total-price {
+    padding: 10px;
+    max-width: 50%;
+  }
+
+  .container h3 {
+    font-size: 2rem;
+  }
+
+  .sub-totals span:first-child,
+  .sub-categories span:first-child {
+    font-size: 1rem;
+  }
+
+  .sub-totals span:last-child,
+  .sub-categories span:last-child {
+    font-size: 1.5rem;
+  }
+
+  /* --------------------------------------------------- */
+  /* PRIVACY POLICY AND TERMS&CONDITIONS */
+  /* --------------------------------------------------- */
+
+  .privacy-and-terms {
+    text-align: center;
+  }
+}
+
+/*  Small Phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+}
+
+/* --------------------------------------------------- */
+/* BLANK */
+/* --------------------------------------------------- */

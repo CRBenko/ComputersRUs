@@ -1,0 +1,94 @@
+Images
+----------------------------------------------
+
+Olivier Collet. (June 10, 2020). AMD Ryzen 7 3700X. Unsplash. Retrieved on Jan 26, 2023 from https://unsplash.com/photos/JMwCe3w7qKk
+
+Luan Gjokaj. (June 20, 2020). Unsplash. Retrieved on Jan 26, 2023 from https://unsplash.com/photos/y4_xZ3cs96w
+
+Nana Dua. (June 6, 2020). The Twin Towers. Unsplash. Retrieved on Jan 26, 2023 from https://unsplash.com/photos/nqCEPrvnLKQ
+
+Ruchindra Gunasekara. (March 24, 2019). Unsplash. Retrieved on Jan 26, 2023 from https://unsplash.com/photos/GK8x_XCcDZg 
+
+Amr Taha.(November 23, 2020). Unsplash. Retrieved on Feb 14, 2023 from https://unsplash.com/photos/qucYweSE3ZY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Thomas Foster. (June 26, 2021). Unsplash. Retrieved on Feb 15, 2023 from https://unsplash.com/photos/vWgoeEYdtIY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Ilias Gainutdinov. (May 6, 2022). Unsplash. Retrieved on Feb 15, 2023 from https://unsplash.com/photos/UILFtxyE9Eg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Christian Wiediger. (April 18, 2019). Unsplash. Retrieved on Feb 15, 2023 from https://unsplash.com/photos/4Iv0Z1e2nNY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Fidel Fernando. (September 13, 2020). Unsplash. Retrieved on Feb 15, 2023 from https://unsplash.com/photos/DubQVeFFbFQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Possessed Photography. (November 23, 2018). Unsplash. Retrieved on Feb 15, 2023 from https://unsplash.com/photos/nuc3NFB_6po?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Patrick Pahlke. (April 8, 2021). Unsplash. Retrieved on Feb 15, 2023 from https://unsplash.com/photos/0kwAZN1hzGI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+
+Text
+---------------------------------------------
+
+Goldman Family. Google Fonts. Retrieved on Feb 14, 2023 from https://fonts.googleapis.com/css2?family=Goldman&display=swap
+
+Roboto Family. Google Fonts. Retrieved on Feb 14, 2023 from https://fonts.googleapis.com/css2?family=Roboto&display=swap
+
+Ion Icons. ionic.io. https://ionic.io/ionicons
+
+
+Resources
+---------------------------------------------
+
+W3Schools.(2023).How To Create a Search Bar. Retrieved Jan 25 2023 from https://www.w3schools.com/howto/howto_css_searchbar.asp 
+
+MDN Contributors. (Jan 18, 2023). <hgroup>. MDN Web Docs. Retrieved Jan 25 2023 from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup
+
+W3Schools. (2023). HTML <address> Tag. Retrieved Jan 26 2023 from https://www.w3schools.com/tags/tag_address.asp
+
+Mainak Das. (July 6, 2021). 3 Ways to Display Two Divs Side By Side. Retrieved Jan 26 2023 from https://dev.to/dawnind/3-ways-to-display-two-divs-side-by-side-3d8b#:~:text=The%20most%20common%20way%20to,using%20inline%2Dblock%20css%20property.&text=The%20inline%2Dblock%20property%20on,like%20an%20inline%20element%20does.
+
+Dofactory. HTML target="_blank". Retrieved Jan 26 from https://www.dofactory.com/html/target/blank#:~:text=The%20target%20attribute%20specifies%20where,the%20linked%20resource%20or%20response.
+
+W3Schools.(2023).How TO - Hero Image. Retrieved Feb 14 2023 from https://www.w3schools.com/howto/howto_css_hero_image.asp
+
+Paul Ryan. (Mar 17, 2020). How to Create a "Skip to Content" Link. CSS-Tricks. Retrieved on February 14, 2023 from https://css-tricks.com/how-to-create-a-skip-to-content-link/
+
+W3Schools.(2023).About Privacy. Retrieved Feb 15 2023 from https://www.w3schools.com/about/about_privacy.asp
+
+W3Schools.(2023).Terms of Service. Retrieved Feb 15 2023 from https://www.w3schools.com/about/about_copyright.asp
+
+W3Schools.(2023).CSS Grid Layout Module. Retrieved Feb 15 2023 from https://www.w3schools.com/css/css_grid.asp
+
+Chris Coyier. (December 9, 2022). A Complete Guide to Flexbox. CSS-Tricks. Retrieved on February 16, 2023 from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Raul Dronca. (August 15, 2016). How to Create a Shopping Cart UI using CSS & Javascript. designmodo. Retrieved on February 16, 2023 from https://designmodo.com/shopping-cart-ui/?fbclid=IwAR0KAZ99XLbFf6D6hyJLizT0x42_FWiu2LVavyGwC0JNw7y-xhXlvSlV0uY
+
+W3Schools.(2023).How TO - Responsive Form. Retrieved February 16 2023 from https://www.w3schools.com/howto/howto_css_responsive_form.asp
+
+Canada Computers & Electronics. (2023). About Us. Retrieved on February 16, 2023 from https://www.canadacomputers.com/about_us.php
+
+Sayantini (LinkedIn). (Nov 29, 2022). How to Perform EMail Validation in JavaScript? edureka. Retrieved on March 8, 2023 from https://www.edureka.co/blog/javascript-email-validation/
+
+Uwe Keim. (Aug 31, 2021). Getting HTML form values. StackOverflow. Retrieved on March 8, 2023 from https://stackoverflow.com/questions/3547035/getting-html-form-values
+
+vadian. (Feb 21, 2018). How to validate an email that it should contain at least some characters before "@". StackOverflow. Retrieved on March 8, 2023 from https://stackoverflow.com/questions/48904952/how-to-validate-an-email-that-it-should-contain-at-least-some-characters-before
+
+W3Schools.(2023). Get Date Methods. Retrieved March 8 2023 from https://www.w3schools.com/js/js_date_methods.asp
+
+MDN Contributors. (2023). <hgroup>. MDN Web Docs. Retrieved March 8 2023 from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+
+Naveen. (Aug 17, 2011). Calculate age given the birth date in the format YYYYMMDD. StackOverflow. Retrieved on March 8, 2023 from https://stackoverflow.com/questions/4060004/calculate-age-given-the-birth-date-in-the-format-yyyymmdd
+
+Parewa Labs Pvt Ltd. (2023). JavaScript Program to Check Leap Year. Programiz. Retrieved March 9 from https://www.programiz.com/javascript/examples/check-leap-year#:~:text=Example%202%3A%20Check%20Leap%20Year%20Using%20newDate()&text=If%20a%20month%20of%20February,according%20to%20the%20specified%20arguments.&text=The%20getDate()%20method%20returns%20the%20day%20of%20the%20month.
+
+W3Schools.(2023). How TO - Mobile Navigation Menu. Retrieved March 9 2023 from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+
+MDN Contributors. (2023). Viewport meta tag. MDN Web Docs. Retrieved March 9 2023 from https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
+
+Shobitha Dinsan. (Aug 19, 2016). How to style jQuery datePicker Calendar? StackOverflow. Retrieved on March 28, 2023 from https://stackoverflow.com/questions/25474378/how-to-style-jquery-datepicker-calendar
+
+W3Schools.(2023). HTML <input type="checkbox">. Retrieved March 28 2023 from https://www.w3schools.com/tags/att_input_type_checkbox.asp
+
+Elian Ebbing. (May 30, 2011). How to validate date with format "mm/dd/yyyy" in JavaScript?. Stack Overflow. Retrieved on March 24, 2023 from https://stackoverflow.com/questions/6177975/how-to-validate-date-with-format-mm-dd-yyyy-in-javascript
+
+Braj. (August 13, 2014). Matching exactly 10 digits in Javascript [duplicate]. Stack Overflow. Retrieved on March 30, 2023 from https://stackoverflow.com/questions/25286239/matching-exactly-10-digits-in-javascript
+
+Toto. Uwe Keim. (July 2, 2010 and August 2, 2019). Minimum 6 characters regex. Stack Overflow. Retrieved on March 30, 2023 from https://stackoverflow.com/questions/3166738/minimum-6-characters-regex

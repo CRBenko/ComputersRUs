@@ -1,0 +1,487 @@
+/*
+ * Student Name: Curtis Benko
+ * Student ID: 41104274
+ * Course: CST8117 - Cross-Platform Web Design
+ * Semester: 23W
+ * Assignment: 4
+ * Date Submitted: APRIL 2023
+*/
+
+/* --------------------------------------------------- */
+/*Product Cards for HOMEPAGE: Retrieved and adapted from W3Schools*/
+/* --------------------------------------------------- */
+
+.topnav-mobile {
+  display: none;
+}
+
+.footer-nav-mobile {
+  display: none;
+}
+
+.copyright-mobile {
+  display: none;
+}
+
+.cards-container {
+  display: flex;
+  align-items: stretch;
+  margin: 220px 80px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #e9e9e9;
+  max-width: 500px;
+  height: fit-content;
+  margin: auto;
+  text-align: center;
+}
+
+.card-title {
+  margin-top: 30px;
+}
+
+.card-img {
+  width: 100%;
+  max-height: 300px;
+}
+
+.price,
+.price-product {
+  color: cadetblue;
+  font-size: 2rem;
+  padding: 30px;
+}
+
+.info {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card button,
+.cart-btn button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.15rem;
+}
+
+.card button:hover,
+.cart-btn button:hover {
+  background-color: cadetblue;
+}
+
+/* --------------------------------------------------- */
+/* Products page grid layout */
+/* --------------------------------------------------- */
+
+.products-container {
+  display: block;
+  min-height: 50vh;
+  margin: 145px 60px 145px 60px;
+  padding: 60px;
+  width: auto;
+  text-align: center;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #e9e9e9;
+}
+
+.products-header {
+  display: inline-block;
+}
+
+.products-title {
+  margin: auto;
+  /* padding-left: 15%; */
+  text-align: center;
+}
+
+/* .product-search-container {
+  float: right;
+} */
+
+input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 1rem;
+  border: none;
+}
+
+.product-search-container button {
+  /* float: right; */
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: gainsboro;
+}
+
+.product-search-container button:hover {
+  background: cadetblue;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  align-items: center;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 60px;
+  padding: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.grid-item-arrow {
+  font-size: 2.5rem;
+  color: #5f9ea0;
+}
+
+/* --------------------------------------------------- */
+/* Products card changes for PRODUCTS PAGE */
+/* --------------------------------------------------- */
+
+.products-card-img {
+  max-width: 100%;
+  max-height: 250px;
+}
+
+/* --------------------------------------------------- */
+/* PRODUCT.HTM PAGE */
+/* --------------------------------------------------- */
+
+.container {
+  display: block;
+  min-height: 50vh;
+  margin: 145px auto 145px auto;
+  padding: 60px;
+  max-width: 40vw;
+  min-height: 800px;
+  text-align: center;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #e9e9e9;
+}
+
+.product-img {
+  width: 75%;
+  max-height: 600px;
+  padding: 20px;
+}
+
+.product-about-description {
+  padding: 40px;
+  text-align: left;
+  line-height: 2;
+}
+
+.product-search-container button {
+  /* float: right; */
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: gainsboro;
+}
+
+/* --------------------------------------------------- */
+/* CART.HTM */
+/* --------------------------------------------------- */
+
+.cart-title {
+  margin: auto;
+  text-align: center;
+}
+
+/* --------------------------------------------------- */
+/* MEDIA QUERIES */
+/* --------------------------------------------------- */
+
+/* Big Tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small Tablet to Big Tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  /* --------------------------------------------------- */
+  /* GENERAL GLOBAL */
+  /* --------------------------------------------------- */
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+
+  /* --------------------------------------------------- */
+  /* TOP AND FOOTER NAV HAMBUGER MENU */
+  /* taken and adapted from W3Schools (2023)
+  /* --------------------------------------------------- */
+
+  .topnav {
+    display: none;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  /* Style the navigation menu */
+  .topnav-mobile {
+    display: contents;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .footer-nav-mobile {
+    display: contents;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e9e9e9;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .copyright-mobile {
+    display: contents;
+    overflow: hidden;
+    text-align: right;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav-mobile #myLinks {
+    display: none;
+    background-color: #e9e9e9;
+  }
+
+  .topnav-mobile #myLinks a {
+    min-width: 40%;
+  }
+
+  /* Style navigation menu links */
+  .topnav-mobile a {
+    max-width: 25%;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .footer-nav-mobile a {
+    max-width: 25%;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav-mobile a.icon {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    right: 0;
+    top: 0;
+  }
+
+  /* --------------------------------------------------- */
+  /* PRODUCTS PAGE */
+  /* --------------------------------------------------- */
+
+  .card-title {
+    margin-top: 10px;
+  }
+
+  .price {
+    color: cadetblue;
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .info {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .products-container {
+    overflow: auto;
+    min-height: 50vh;
+    margin: 30px 30px 30px 30px;
+    padding: 20px;
+  }
+
+  .products-header {
+    display: inline-block;
+    margin: 30px auto;
+  }
+
+  .products-title {
+    /* padding-left: 15%; */
+    text-align: center;
+  }
+
+  .product-search-container {
+    margin: auto;
+  }
+
+  input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .product-search-container button {
+    /* float: right; */
+    padding: 6px 10px;
+    margin-top: 8px;
+    background: #ddd;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: gainsboro;
+  }
+
+  .product-search-container button:hover {
+    background: cadetblue;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    margin: 30px;
+  }
+
+  .grid-item-arrow {
+    display: none;
+  }
+
+  /* --------------------------------------------------- */
+  /* Products card changes for PRODUCTS PAGE */
+  /* --------------------------------------------------- */
+
+  .products-card-img {
+    max-width: 100%;
+  }
+
+  /* --------------------------------------------------- */
+  /* PRODUCT PAGE */
+  /* --------------------------------------------------- */
+
+  .container {
+    display: block;
+    min-height: 50vh;
+    margin: 30px;
+    padding: 20px;
+    max-width: 100vw;
+    text-align: center;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #e9e9e9;
+  }
+
+  .product-img {
+    width: 75%;
+    max-height: 600px;
+    padding: 20px;
+  }
+
+  .price-product {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .product-about-description {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    line-height: 2;
+    font-size: 1rem;
+  }
+}
+
+/*  Small Phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+}
+
+/* --------------------------------------------------- */
+/* UNUSED DECLARATIONS FOR PRODUCT SCROLL ELEMENT OPTION */
+/* --------------------------------------------------- */
+
+/* .products-scroll {
+  display: inline-flex;
+  margin: auto;
+  text-align: center;
+  width: auto;
+}
+
+.products-scroll p {
+  margin: 10px;
+  font-size: 36px;
+} 
+
+.arrow {
+  margin-top: 15px;
+  color: #5f9ea0;
+  font-size: 36px;
+} */

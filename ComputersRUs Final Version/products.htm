@@ -1,0 +1,288 @@
+<!--
+  -- Student Name: Curtis Benko
+  -- Student ID: 41104274
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: 23W
+  -- Assignment: 4
+  -- Date Submitted: APRIL 2023 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link lang="en-ca" />
+    <title>ComputersRUS</title>
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet" href="assets/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="assets/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      type="keywords"
+      content="Computers, Computer Parts, Computer Components"
+    />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <a class="skip-to-content-link" href="#main"> Skip to content </a>
+    <header>
+      <!-- MOBILE Top Navigation Menu -->
+      <div class="topnav-mobile">
+        <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="index.htm">Home</a>
+          <a href="about-us.htm">About Us</a>
+          <a href="contact-us.htm">Contact Us</a>
+          <a href="products.htm">Products</a>
+          <a href="cart.htm">Cart</a>
+          <a href="privacy.htm">Privacy Policy</a>
+          <a href="terms.htm">Terms and Conditions</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- MOBILE NAV END -->
+      <nav class="topnav">
+        <div class="logo">
+          <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        </div>
+        <div class="pages">
+          <a href="index.htm">Home</a>
+          <a href="about-us.htm">About Us</a>
+          <a href="contact-us.htm">Contact Us</a>
+          <a href="products.htm">Products</a>
+          <a href="cart.htm">Cart</a>
+        </div>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <address class="written-by">Written by Curtis Benko</address>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="products-container">
+        <div class="products-header">
+          <div class="products-title"><h1>Products</h1></div>
+          <div class="product-search-container">
+            <form action="#">
+              <input type="text" placeholder="Search for products.." name="search" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item-arrow">
+            <ion-icon name="arrow-back-outline"</ion-icon>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                class="products-card-img"
+                src="images/graphics.jpg"
+                alt="Nvidia Graphics Card"
+              />
+              <h3 class="card-title">NVIDIA RTX</h3>
+              <p class="price">$1499.99</p>
+              <p class="info">Category: Graphics Card</p>
+              <a href="product.htm"><button>View Product</button></a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                class="products-card-img"
+                src="images/amd-gpu.jpg"
+                alt="AMD Graphics Card"
+              />
+              <h3 class="card-title">AMD RX</h3>
+              <p class="price">$999.99</p>
+              <p class="info">Category: Graphics Card</p>
+              <a href="product.htm"><button>View Product</button></a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                class="products-card-img"
+                src="images/intel-gpu.jpg"
+                alt="Intel Graphics Card"
+              />
+              <h3 class="card-title">INTEL ARC</h3>
+              <p class="price">$499.99</p>
+              <p class="info">Category: Graphics Card</p>
+              <a href="product.htm"><button>View Product</button></a>
+            </div>
+          </div>
+          <div class="grid-item-arrow">
+            <ion-icon name="arrow-forward-outline"</ion-icon>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item-arrow">
+            <ion-icon name="arrow-back-outline"</ion-icon>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                class="products-card-img"
+                src="images/cpu.jpg"
+                alt="AMD CPU"
+              />
+              <h3 class="card-title">AMD RYZEN</h3>
+              <p class="price">$599.99</p>
+              <p class="info">Category: CPU Processor</p>
+              <a href="product.htm"><button>View Product</button></a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                class="products-card-img"
+                src="images/intel-cpu.jpg"
+                alt="INTEL CPU"
+              />
+              <h3 class="card-title">INTEL CORE</h3>
+              <p class="price">$429.99</p>
+              <p class="info">Category: CPU Processor</p>
+              <a href="product.htm"><button>View Product</button></a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                class="products-card-img"
+                src="images/fx-cpu.jpg"
+                alt="FX CPU"
+              />
+              <h3 class="card-title">AMD FX</h3>
+              <p class="price">$99.99</p>
+              <p class="info">Category: CPU Processor</p>
+              <a href="product.htm"><button>View Product</button></a>
+            </div>
+          </div>
+          <div class="grid-item-arrow">
+            <ion-icon name="arrow-forward-outline"</ion-icon>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item-arrow">
+            <ion-icon name="arrow-back-outline"</ion-icon>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                class="products-card-img"
+                src="images/corsair-ram.jpg"
+                alt="Corsair RAM"
+              />
+              <h3 class="card-title">CORSAIR</h3>
+              <p class="price">$149.99</p>
+              <p class="info">Category: Memory/RAM</p>
+              <a href="product.htm"><button>View Product</button></a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                class="products-card-img"
+                src="images/memory.jpg"
+                alt="G.Skill RAM"
+              />
+              <h3 class="card-title">G.SKILL</h3>
+              <p class="price">$99.99</p>
+              <p class="info">Category: Memory/RAM</p>
+              <a href="product.htm"><button>View Product</button></a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                class="products-card-img"
+                src="images/ripjaw-ram.jpg"
+                alt="Ripjaw RAM"
+              />
+              <h3 class="card-title">RIPJAW</h3>
+              <p class="price">$49.99</p>
+              <p class="info">Category: Memory/RAM</p>
+              <a href="product.htm"><button>View Product</button></a>
+            </div>
+          </div>
+          <div class="grid-item-arrow">
+            <ion-icon name="arrow-forward-outline"</ion-icon>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- MOBILE Footer Navigation Menu -->
+      <div class="footer-nav-mobile">
+        <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        <!-- Navigation links (hidden by default) -->
+        <div class="copyright-mobile">
+          <address class="text">&copy; computersRus 2023</address>
+        </div>
+      </div>
+      <!-- MOBILE Footer NAV END -->
+      <!--This is where the footer lies-->
+      <nav class="footer-nav">
+        <div class="logo">
+          <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        </div>
+        <div class="pages">
+          <a href="index.htm">Home</a>
+          <a href="about-us.htm">About Us</a>
+          <a href="contact-us.htm">Contact Us</a>
+          <a href="products.htm">Products</a>
+          <a href="cart.htm">Cart</a>
+          <a href="privacy.htm">Privacy Policy</a>
+          <a href="terms.htm">Terms and Conditions</a>
+        </div>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+      <div class="copyright">
+        <address class="text">&copy; computersRus 2023</address>
+      </div>
+    </footer>
+    <script src="assets/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </body>
+</html>
+
+<!-- ******** ORIGINAL ITEM PAGING/SCROLL-->
+<!-- <div class="products-scroll">
+  <ion-icon name="arrow-back-outline" class="arrow"></ion-icon>
+  <p>1</p>
+  <p>2</p>
+  <p>3</p>
+  <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
+</div> -->

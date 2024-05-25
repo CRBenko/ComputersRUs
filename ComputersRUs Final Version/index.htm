@@ -1,0 +1,245 @@
+<!--
+  -- Student Name: Curtis Benko
+  -- Student ID: 41104274
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: 23W
+  -- Assignment: 4
+  -- Date Submitted: APRIL 2023 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link lang="en-ca" />
+    <title>ComputersRUS</title>
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet" href="assets/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="assets/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      type="keywords"
+      content="Computers, Computer Parts, Computer Components"
+    />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <a class="skip-to-content-link" href="#main"> Skip to content </a>
+    <!--This is where the header lies-->
+    <header>
+      <!-- MOBILE Top Navigation Menu -->
+      <div class="topnav-mobile">
+        <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="index.htm">Home</a>
+          <a href="about-us.htm">About Us</a>
+          <a href="contact-us.htm">Contact Us</a>
+          <a href="products.htm">Products</a>
+          <a href="cart.htm">Cart</a>
+          <a href="privacy.htm">Privacy Policy</a>
+          <a href="terms.htm">Terms and Conditions</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- MOBILE NAV END -->
+      <nav class="topnav">
+        <div class="logo">
+          <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        </div>
+        <div class="pages">
+          <a href="index.htm">Home</a>
+          <a href="about-us.htm">About Us</a>
+          <a href="contact-us.htm">Contact Us</a>
+          <a href="products.htm">Products</a>
+          <a href="cart.htm">Cart</a>
+        </div>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <address class="written-by">Written by Curtis Benko</address>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Hero text-->
+      <div class="hero-section">
+        <hgroup class="hero-text">
+          <h1>Welcome to computersRus!</h1>
+          <p>Your computer parts warehouse</p>
+        </hgroup>
+      </div>
+      <!--Section with two paragraphs side-by-side-->
+      <div class="about-section">
+        <h2>Learn More About Us!</h2>
+        <div class="mobile-cta-about">
+          <a href="about-us.htm"><button>More About Us</button></a>
+        </div>
+        <!--One principle of Gestalt Design-- Common Regions-->
+        <div class="parent-paragraph">
+          <div class="child-paragraph">
+            <p class="child-paragraph-p">
+              Warehouse Information--Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book.
+              <a
+                class="hyperlink"
+                target="_blank"
+                href="https://www.curtisbenko.com"
+              >
+                www.curtisbenko.com
+              </a>
+            </p>
+            <figure class="warehouse">
+              <img
+                class="warehouse-img"
+                src="images/warehouse.jpg"
+                alt="cRu Warehouse"
+              />
+              <figcaption>Fig.1 Our local warehouse</figcaption>
+            </figure>
+            <a href="about-us.htm"><button>More About Us</button></a>
+          </div>
+          <div class="child-paragraph">
+            <p class="child-paragraph-p">
+              Types of parts categories sold--Lorem Ipsum is simply dummy text
+              of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book.
+            </p>
+            <ul class="parts-list">
+              <li>Cases</li>
+              <li>Power Supplies</li>
+              <li>Motherboards</li>
+              <li>Memory</li>
+              <li>Graphics Cards</li>
+              <li>CPU Processors</li>
+              <li>CPU Coolers</li>
+              <li>Case Fans</li>
+              <li>Pre-build PC's</li>
+            </ul>
+            <a href="products.htm"><button>Explore Products</button></a>
+          </div>
+        </div>
+      </div>
+      <!--Mobile Product cards CTA-->
+      <div class="mobile-cta-products">
+        <h2>Highlighted Products</h2>
+        <a href="products.htm"><button>Explore Our Products</button></a>
+      </div>
+      <!--Product Cards-->
+      <div class="homepage-product-container">
+        <h2>Highlighted Products</h2>
+        <div class="mobile-cta-products">
+          <a href="products.htm"><button>Explore Our Products</button></a>
+        </div>
+        <div class="cards-container">
+          <div class="card">
+            <img
+              class="card-img"
+              src="images/graphics.jpg"
+              alt="Graphics Card"
+            />
+            <h3 class="card-title">Graphics Cards</h3>
+            <p class="price">$899.99</p>
+            <p class="info">
+              Some text about the cards. Super fast and quite lorem ipsum lorem
+              ipsum. Lorem ipsum lorem ipsum.
+            </p>
+            <a href="products.htm"><button>Explore Graphics Cards</button></a>
+          </div>
+          <div class="card">
+            <img class="card-img" src="images/cpu.jpg" alt="CPU" />
+            <h3 class="card-title">CPU</h3>
+            <p class="price">$399.99</p>
+            <p class="info">
+              Some text about the CPU's. Super fast and quite lorem ipsum lorem
+              ipsum. Lorem ipsum lorem ipsum.
+            </p>
+            <a href="products.htm"><button>Explore CPU Processors</button></a>
+          </div>
+          <div class="card">
+            <img class="card-img" src="images/memory.jpg" alt="Memory/RAM" />
+            <h3 class="card-title">Memory/RAM</h3>
+            <p class="price">$99.99</p>
+            <p class="info">
+              Some text about the RAM chips. Super fast and quite lorem ipsum
+              lorem ipsum. Lorem ipsum lorem ipsum.
+            </p>
+            <a href="products.htm"><button>Explore Memory</button></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- MOBILE Footer Navigation Menu -->
+      <div class="footer-nav-mobile">
+        <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        <!-- Navigation links (hidden by default) -->
+        <div class="copyright-mobile">
+          <address class="text">&copy; computersRus 2023</address>
+        </div>
+      </div>
+      <!-- MOBILE Footer NAV END -->
+      <!--This is where the footer lies-->
+      <nav class="footer-nav">
+        <div class="logo">
+          <a href="index.htm"><img src="images/logo-black.svg" /></a>
+        </div>
+        <div class="pages">
+          <a href="index.htm">Home</a>
+          <a href="about-us.htm">About Us</a>
+          <a href="contact-us.htm">Contact Us</a>
+          <a href="products.htm">Products</a>
+          <a href="cart.htm">Cart</a>
+          <a href="privacy.htm">Privacy Policy</a>
+          <a href="terms.htm">Terms and Conditions</a>
+        </div>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+      <div class="copyright">
+        <address class="text">&copy; computersRus 2023</address>
+      </div>
+    </footer>
+    <script src="assets/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </body>
+</html>
